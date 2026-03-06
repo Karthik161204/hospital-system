@@ -1,0 +1,18 @@
+CREATE TABLE doctors (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+name TEXT,
+specialty TEXT
+);
+
+CREATE TABLE appointments (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+patient_name TEXT,
+doctor_id INTEGER,
+date TEXT,
+prescription TEXT
+);
+
+INSERT INTO doctors(name,specialty) VALUES
+('Dr. Smith','Cardiologist'),
+('Dr. John','Dermatologist'),
+('Dr. Sarah','Neurologist');
